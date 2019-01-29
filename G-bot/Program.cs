@@ -24,6 +24,8 @@ namespace G_bot
 
         public async Task StartAsync() {
 
+           
+
             if (Config.bot.token == "" || Config.bot.token == null) return;
             _client = new DiscordSocketClient(new DiscordSocketConfig {
                 LogLevel =LogSeverity.Verbose           

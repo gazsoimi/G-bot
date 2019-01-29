@@ -1,3 +1,4 @@
-{
-  "TEST":"Hello World" 
+﻿{
+  "TEST": "Hello World" ,
+    "WELCOME_&NAME": "Szia {0}, A nevem Makise Kurisu! Miben lehetek a segítségedre?"
     }

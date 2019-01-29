@@ -25,7 +25,7 @@ namespace G_bot
 
         }
 
-        public static string GetAlerts(string key) {
+        public static string GetAlert(string key) {
 
             if (alerts.ContainsKey(key)) return alerts[key];
             return "";
@@ -33,7 +33,24 @@ namespace G_bot
 
 
 
+
+        public static string GetFormattedAlert(string key, params object[] parameter) {
+
+            if (alerts.ContainsKey(key))
+            {
+                return String.Format(alerts[key], parameter);
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        
     }
 
 
 }
+
+
+
