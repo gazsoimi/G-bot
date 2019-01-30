@@ -20,6 +20,7 @@ namespace G_bot
         commandhandler _handler;
 
         static void Main(string[] args)
+
     => new Program().StartAsync().GetAwaiter().GetResult();
 
         public async Task StartAsync() {
@@ -41,7 +42,7 @@ namespace G_bot
         private async Task Log(LogMessage msg)
         {
             Console.WriteLine(msg.Message);
-          //  return Task.CompletedTask;
+          
         }
     }
 }

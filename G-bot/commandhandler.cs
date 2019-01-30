@@ -38,9 +38,18 @@ namespace G_bot
                     Console.WriteLine(result.ErrorReason);
 
             }
+
+            
+            string[] badWords = { "Chuck Norris"};
+
+            if (badWords.Any(word => msg.Content.IndexOf(word, 0, msg.Content.Length, StringComparison.OrdinalIgnoreCase) >= 0))
+            {
+             context.Channel.SendMessageAsync("Ne szórakozz a Norrissal!");
+            }
             
 
-         }
+
+        }
 
         }
     }

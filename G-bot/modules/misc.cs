@@ -70,11 +70,9 @@ namespace G_bot.modules
 
 
 
-        [Command("Chuck Norris")]
-        public async Task cn([Remainder]string mg)
-        {
-            Context.Channel.SendMessageAsync("!vicc");
-        }
+       //- [Command("Chuck Norris")]
+        //public async Task cn([Remainder]string mg)
+        //{            Context.Channel.SendMessageAsync("!vicc");}
 
 
         [Command("Ping")]
