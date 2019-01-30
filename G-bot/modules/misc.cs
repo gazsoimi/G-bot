@@ -65,12 +65,54 @@ namespace G_bot.modules
 
 
 
+        [Command("Titok")]
+        public async Task Secret()
+        {
+            
+            bool isAdmin = false;
+            string targetRoleName = "Admin";
+            var result = from r in Context.Guild.Roles
+                         where r.Name == targetRoleName
+                         select r.Id;
+            ulong roleID = result.FirstOrDefault();
+            if (roleID == 0) {
+                isAdmin = false;
+            }
+            else{
+                isAdmin = true;
+            }
+            
+
+            var dmChannel = await Context.User.GetOrCreateDMChannelAsync();
+
+            if (!isAdmin)  
+            {
+                await dmChannel.SendMessageAsync(Utilities.GetAlert("TITOK"));
+                
+            }
+            else {
+
+                await dmChannel.SendMessageAsync("Hozzáférés megtagadva. A titok elolvasására csak adminok jogosultak!");
+
+            }
+        }
+            
 
 
 
 
 
-       //- [Command("Chuck Norris")]
+
+
+
+
+
+
+
+
+
+
+        //- [Command("Chuck Norris")]
         //public async Task cn([Remainder]string mg)
         //{            Context.Channel.SendMessageAsync("!vicc");}
 

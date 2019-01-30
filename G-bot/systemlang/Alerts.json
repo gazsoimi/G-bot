@@ -1,6 +1,6 @@
 ﻿{
-  "TEST": "Hello World" ,
-  "WELCOME_&NAME": "Szia {0}, A nevem Makise Kurisu! Miben lehetek a segítségedre?"
-
+  "TEST": "Hello World",
+  "WELCOME_&NAME": "Szia {0}, A nevem Makise Kurisu! Miben lehetek a segítségedre?",
+  "TITOK": "A titok az, hogy nincs titok"
 
 }
